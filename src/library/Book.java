@@ -57,4 +57,14 @@ public class Book {
             System.out.println("The page number should be greater then 0");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", writerName='" + writerName + '\'' +
+                ", year=" + year +
+                ", pages=" + pages +
+                '}';
+    }
 }

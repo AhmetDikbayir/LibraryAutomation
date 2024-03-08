@@ -12,6 +12,14 @@ public class LibraryRunner {
         book2.setBookName(DataBank.bookName.get(0));
         System.out.println(book2.getBookName());
 
+        UserService userService = new UserService();
+
+        System.out.println(userService.user);
+
+        userService.borrowBook(book2);
+
+        System.out.println(userService.user);
+
 
     }
 }

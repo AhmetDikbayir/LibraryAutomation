@@ -4,7 +4,7 @@ public class UserService {
 
     User user = new User();
 
-    public void getBook(Book book){
+    public void borrowBook(Book book){
         user.setBook(book);
     }
 }

@@ -65,4 +65,15 @@ public class User {
     public void setBook(Book book) {
         this.book = book;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", user_tel='" + user_tel + '\'' +
+                ", book=" + book +
+                '}';
+    }
 }
