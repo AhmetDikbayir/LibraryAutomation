@@ -6,6 +6,8 @@ public class User {
     private String email;
     private String user_tel;
 
+    private Book book;
+
     public User() {
     }
 
@@ -14,6 +16,14 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.user_tel = user_tel;
+    }
+
+    public User(String name, String lastName, String email, String user_tel, Book book) {
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.user_tel = user_tel;
+        this.book = book;
     }
 
     public String getName() {
@@ -46,5 +56,13 @@ public class User {
 
     public void setUser_tel(String user_tel) {
         this.user_tel = user_tel;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
     }
 }
