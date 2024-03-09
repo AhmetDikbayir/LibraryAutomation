@@ -1,6 +1,7 @@
 package library;
 
 import javax.xml.crypto.Data;
+import java.util.ArrayList;
 
 public class LibraryRunner {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class LibraryRunner {
         System.out.println(book2.getBookName());
 
         Book book3 = new Book("Doğu ekspresi cinayeti", "Agatha Christie", 2008, 450);
+
 
         UserService userService = new UserService();
 
@@ -48,6 +50,8 @@ public class LibraryRunner {
         userService.borrowBook(book3);
         userService.borrowBook(book2);
 
+        ArrayList<Book> bookList2 = new ArrayList<>();
+        user2.setBookList(book2);
         //userService.giveBackBook(book3);
         System.out.println(user2);
         System.out.println(userService.getUser());
