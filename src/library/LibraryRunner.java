@@ -40,6 +40,9 @@ public class LibraryRunner {
         System.out.println(userService.getUser());
         System.out.println(userService1.getUser());
 
+        System.out.println("--------FOURTH----------");
+        User user2 = userService1.createUser("Ali", "Han", "ali@mail.com", "5456669900");
 
+        System.out.println(user2);
     }
 }
