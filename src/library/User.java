@@ -1,12 +1,14 @@
 package library;
 
+import java.util.ArrayList;
+
 public class User {
     private String name;
     private String lastName;
     private String email;
     private String user_tel;
 
-    private Book book;
+    private ArrayList<Book> bookList;
 
     public User() {
     }
@@ -18,12 +20,12 @@ public class User {
         this.user_tel = user_tel;
     }
 
-    public User(String name, String lastName, String email, String user_tel, Book book) {
+    public User(String name, String lastName, String email, String user_tel, ArrayList<Book> bookList) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.user_tel = user_tel;
-        this.book = book;
+        this.bookList = bookList;
     }
 
     public String getName() {
@@ -58,12 +60,12 @@ public class User {
         this.user_tel = user_tel;
     }
 
-    public Book getBook() {
-        return book;
+    public ArrayList<Book> getBookList() {
+        return bookList;
     }
 
-    public void setBook(Book book) {
-        this.book = book;
+    public void setBookList(ArrayList<Book> bookList) {
+        this.bookList = bookList;
     }
 
     @Override
@@ -73,7 +75,7 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", user_tel='" + user_tel + '\'' +
-                ", book=" + book +
+                ", bookList=" + bookList +
                 '}';
     }
 }

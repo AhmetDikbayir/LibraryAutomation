@@ -19,37 +19,37 @@ public class LibraryRunner {
 
         UserService userService = new UserService();
 
-        UserService userService1 = new UserService(new User("Ahmet", "Dikbayir", "a.dikbayir@gmail.com", "05456960914"));
+        //UserService userService1 = new UserService(new User("Ahmet", "Dikbayir", "a.dikbayir@gmail.com", "05456960914"));
 
 
         System.out.println("--------FIRST----------");
-        System.out.println(userService.getUser());
-        System.out.println(userService1.getUser());
+        //System.out.println(userService.getUser());
+        //System.out.println(userService1.getUser());
         System.out.println("------------------");
 
 
-        userService.borrowBook(book2);
-        userService1.borrowBook(book1);
+        //userService.borrowBook(book2);
+        //userService1.borrowBook(book1);
 
         System.out.println("--------SECOND----------");
         System.out.println(userService.getUser());
-        System.out.println(userService1.getUser());
+        //System.out.println(userService1.getUser());
         System.out.println("------------------");
-        userService.giveBackBook(book2);
-        userService1.giveBackBook(book1);
+        //userService.giveBackBook(book2);
+        //userService1.giveBackBook(book1);
 
         System.out.println("--------THIRD----------");
         System.out.println(userService.getUser());
-        System.out.println(userService1.getUser());
+        //System.out.println(userService1.getUser());
 
         System.out.println("--------FOURTH----------");
-        User user2 = userService1.createUser("Ali", "Han", "ali@mail.com", "5456669900");
+        User user2 = userService.createUser("Ali", "Han", "ali@mail.com", "5456669900");
 
-        userService1.borrowBook(book3);
-        userService1.borrowBook(book2);
+        userService.borrowBook(book3);
+        userService.borrowBook(book2);
 
-        //userService1.giveBackBook(book3);
+        //userService.giveBackBook(book3);
         System.out.println(user2);
-        System.out.println(userService1.getUser());
+        System.out.println(userService.getUser());
     }
 }

@@ -1,5 +1,7 @@
 package library;
 
+import java.util.ArrayList;
+
 public class UserService {
 
     private User user = new User();
@@ -7,9 +9,9 @@ public class UserService {
     public UserService() {
     }
 
-    public UserService(User user) {
-        this.user = user;
-    }
+//    public UserService(User user) {
+//        this.user = user;
+//    }
 
     public User getUser() {
         return user;
@@ -20,14 +22,14 @@ public class UserService {
     }
 
     public void borrowBook(Book book){
-        user.setBook(book);
+        ArrayList<Book> bookList1 = null;
+        bookList1.add(book);
+        user.setBookList(bookList1);
     }
 
-    public void giveBackBook(Book book){
+    public void giveBackBook(Book book, User user){
 
-        if(book.getBookName().equalsIgnoreCase(user.getBook().getBookName())){
-            user.setBook(null);
-        }
+
     }
 
     public User createUser(String name, String lastName, String email, String user_tel){
