@@ -15,8 +15,10 @@ public class DataBank {
         bookList.add(book1);
         bookList.add(book2);
         bookList.add(book3);
+        ArrayList<Book> bookList1 = new ArrayList<>();
+        bookList1.add(book1);
 
-        User user1 = new User("Ahmet", "Han", "a.han@gmail.com", "5456960914");
+        User user1 = new User("Ahmet", "Han", "a.han@gmail.com", "5456960914",bookList1);
         User user2 = new User("Ali", "Can", "a.can@gmail.com", "5459996600");
 
         userList.add(user1);

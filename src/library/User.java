@@ -64,8 +64,8 @@ public class User {
         return bookList;
     }
 
-    public void setBookList(ArrayList<Book> bookList) {
-        this.bookList = bookList;
+    public void setBookList(Book book) {
+        this.bookList.add(book);
     }
 
     @Override

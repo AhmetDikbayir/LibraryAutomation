@@ -13,7 +13,7 @@ public class LibraryRunner {
 
 
         //library.book1.setBookName("Denizler Altında 20Bin Fersah");
-        library.book.setBookName(DataBank.bookList.get(0).getBookName());
+        //library.book.setBookName(DataBank.bookList.get(0).getBookName());
 
 
 
@@ -23,26 +23,28 @@ public class LibraryRunner {
 
         System.out.println("--------FIRST----------");
         System.out.println("--------------DataBank deki kitaplar------------");
-        bookService.listBook();
+        //bookService.listBook();
         System.out.println("------------------------");
 
 
         System.out.println("--------SECOND----------");
         System.out.println("--------------DataBank deki Userlar------------");
-        for(User user : DataBank.userList){
-            System.out.println(user.getName());
-        }
+        userService.borrowBook();
         System.out.println("------------------------");
 
         System.out.println("--------THIRD----------");
-        for(User user : DataBank.userList){
-            System.out.println(user.getName());
-        }
+
         System.out.println("------------------------");
 
         System.out.println("--------FOURTH----------");
-        User user3 = userService.createUser("Veli", "Han", "ali@mail.com", "5456669900");
-        userService.listUser();
+       // User user3 = userService.createUser("Veli", "Han", "ali@mail.com", "5456669900");
+        //userService.listUser();
+
+        System.out.println(DataBank.userList.get(0));
+
+        //a.han@gmail.com
+        //Please enter a bookname :
+        //Atomik Alışkanlıklar
 
     }
 }
