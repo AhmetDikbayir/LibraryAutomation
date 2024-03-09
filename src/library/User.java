@@ -70,12 +70,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", user_tel='" + user_tel + '\'' +
-                ", bookList=" + bookList +
-                '}';
+        return "User : \n" +
+                "User Name : " + name +"\n" +
+                "User Lastname : " + lastName +"\n" +
+                "User Email : " + email + "\n" +
+                "User Phone : " + user_tel + "\n" +
+                "User Booklist : " + bookList + "\n"+
+                "-------------------------------------" + "\n";
     }
 }

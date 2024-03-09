@@ -9,4 +9,8 @@ public class UserService {
         DataBank.userList.add(user);
         return user;
     }
+
+    public void listUser(){
+        DataBank.userList.stream().forEach(System.out::print);
+    }
 }

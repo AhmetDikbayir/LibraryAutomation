@@ -7,4 +7,8 @@ public class BookService {
         DataBank.bookList.add(book);
         return book;
     }
+
+    public void listBook(){
+        DataBank.bookList.stream().forEach(System.out::print);
+    }
 }
