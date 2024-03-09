@@ -29,4 +29,9 @@ public class UserService {
             user.setBook(null);
         }
     }
+
+    public User createUser(String name, String lastName, String email, String user_tel){
+        User user = new User(name, lastName, email, user_tel);
+        return user;
+    }
 }
