@@ -11,7 +11,7 @@ public class LibraryService {
         BookService bookService = new BookService();
         int select =0;
         do{
-            System.out.println("Welcome Ancient MAgnificient Library");
+            System.out.println("Welcome Ancient Magnificient Library");
             System.out.println("Select what do you want to do?\n" +
                     "1 ==> List Users\n" +
                     "2 ==> List Books\n" +

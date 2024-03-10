@@ -16,6 +16,7 @@ public class UserService {
         String email = scan.next();
         System.out.println("Please enter the member's phone number : ");
         String user_tel = scan.next();
+        System.out.println("User successfully added!!");
         User user = new User(name, lastName, email, user_tel);
         DataBank.userList.add(user);
         return user;
