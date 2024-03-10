@@ -1,6 +1,5 @@
 package library;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -8,7 +7,15 @@ public class UserService {
 
     Scanner scan = new Scanner(System.in);
 
-    public User createUser(String name, String lastName, String email, String user_tel){
+    public User createUser(){
+        System.out.println("Please enter the member name : ");
+        String name = scan.nextLine();
+        System.out.println("Please enter the member lastname : ");
+        String lastName = scan.nextLine();
+        System.out.println("Please enter the member email address : ");
+        String email = scan.next();
+        System.out.println("Please enter the member's phone number : ");
+        String user_tel = scan.next();
         User user = new User(name, lastName, email, user_tel);
         DataBank.userList.add(user);
         return user;
@@ -40,7 +47,6 @@ public class UserService {
                 break;
             }
         }
-
-
+        scan.close();
     }
 }
