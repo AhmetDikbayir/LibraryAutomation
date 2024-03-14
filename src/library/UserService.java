@@ -43,6 +43,8 @@ public class UserService {
                     if (user.getEmail().equalsIgnoreCase(userEmail)) {
                         user.setBookList(book);
                         break;
+                    }else {
+                        System.out.println("");
                     }
                 }
                 break;

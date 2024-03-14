@@ -8,9 +8,9 @@ public class DataBank {
     static ArrayList<User> userList = new ArrayList<>();
 
     static {
-        Book book1 = new Book("Harry Potter Felsefe Taşı", "J. K. Rowling", 2013, 245);
-        Book book2 = new Book("Yüzüklerin Efendisi", "J. R. R: Tolkien", 2007, 456);
-        Book book3 = new Book("Doğu ekspresi cinayeti", "Agatha Christie", 2008, 450);
+        Book book1 = new Book("Harry Potter Felsefe Taşı", "J. K. Rowling", 2013, 245, "Sci-Fi");
+        Book book2 = new Book("Yüzüklerin Efendisi", "J. R. R: Tolkien", 2007, 456, "Sci-Fi");
+        Book book3 = new Book("Doğu ekspresi cinayeti", "Agatha Christie", 2008, 450, "Adventure");
 
         bookList.add(book1);
         bookList.add(book2);

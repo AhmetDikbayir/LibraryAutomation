@@ -6,15 +6,17 @@ public class Book {
     private String writerName;
     private Integer year;
     private Integer pages;
+    private String genres;
 
     public Book() {
     }
 
-    public Book(String bookName, String writerName, Integer year, Integer pages) {
+    public Book(String bookName, String writerName, Integer year, Integer pages, String genres) {
         this.bookName = bookName;
         this.writerName = writerName;
         this.year = year;
         this.pages = pages;
+        this.genres = genres;
     }
 
     public String getBookName() {
@@ -46,6 +48,14 @@ public class Book {
 
     }
 
+    public String getGenres() {
+        return genres;
+    }
+
+    public void setGenres(String genres) {
+        this.genres = genres;
+    }
+
     public Integer getPages() {
         return pages;
     }
@@ -65,6 +75,7 @@ public class Book {
                 "Book Writer : " + writerName +"\n" +
                 "Book Year : " + year + "\n" +
                 "Book Pages : " + pages + "\n" +
+                "Book genres : " + genres + "\n" +
                 "-------------------------------------" + "\n";
     }
 }

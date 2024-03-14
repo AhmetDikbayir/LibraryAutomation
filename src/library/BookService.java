@@ -17,9 +17,11 @@ public class BookService {
         System.out.println("Please enter the book's page number : ");
         int pages = scan.nextInt();
         System.out.println();
-        Book book = new Book(bookName, writerName, year, pages);
+        System.out.println("Please enter the book's genres : ");
+        String genres = scan.next();
+        Book book = new Book(bookName, writerName, year, pages, genres);
         DataBank.bookList.add(book);
-        scan.close();
+        System.out.println("Book succesfully created");
         return book;
 
     }

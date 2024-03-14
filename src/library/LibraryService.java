@@ -21,7 +21,7 @@ public class LibraryService {
                     "6 ==> Get Back Book from User\n" +
                     "0 ==> EXIT");
             select = scan.nextInt();
-            System.out.println();
+            //System.out.println();
             switch (select){
                 case 1:
                     userService.listUser();
@@ -39,7 +39,7 @@ public class LibraryService {
                     userService.borrowBook();
                     break;
                 case 0:
-                    System.out.println("Thank you for prefering library\n" +
+                    System.out.println("Thank you for prefering our library\n" +
                             "Have a nice day!\n" +
                             "Happy Reading!!");
 
