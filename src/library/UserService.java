@@ -27,29 +27,19 @@ public class UserService {
     }
 
     public void borrowBook(){
-        System.out.println("Please enter the useremail : ");
+        //System.out.println();
+        System.out.println("Please enter the user Email : ");
         String userEmail = scan.nextLine();
         System.out.println("Please enter a bookname : ");
         String bookName = scan.nextLine();
 
-        Iterator<Book> bookIterator = DataBank.bookList.iterator();
-        while (bookIterator.hasNext()) {
-            Book book = bookIterator.next();
-            if (book.getBookName().equalsIgnoreCase(bookName)) {
-                System.out.println("Book found");
-                Iterator<User> userIterator = DataBank.userList.iterator();
-                while (userIterator.hasNext()) {
-                    User user = userIterator.next();
-                    if (user.getEmail().equalsIgnoreCase(userEmail)) {
-                        user.setBookList(book);
-                        break;
-                    }else {
-                        System.out.println("");
-                    }
+        for(User user : DataBank.userList){
+            for(Book book : DataBank.bookList){
+                if(user.getEmail().equals(userEmail) && book.getBookName().equalsIgnoreCase(bookName)){
+                    user.setBookList(book);
                 }
-                break;
             }
         }
-        scan.close();
+
     }
 }
